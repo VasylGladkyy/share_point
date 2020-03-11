@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>SharePoint</title>
 </head>
 <body>
+
 <header class="header navbar-dark bg-dark">
     <div class="header-left">
-        <button class="header-left__button">
+        <button class="header-left__button" id="header_button">
             <span class="fas fa-th"></span>
         </button>
         <div class="header-left__links">
@@ -47,14 +48,105 @@
     <!-- /.header-right -->
 </header>
 
+<div class="overlay">
+    <div class="menu">
+        <div class="menu-navigations">
+            <button class="menu-navigations__button" id="navigation_button">
+                <span class="fas fa-th"></span>
+            </button>
+            <a href="#" class="menu-navigations__link">
+                Office
+                <span class="fas fa-arrow-right"></span>
+            </a>
+        </div>
+        <!-- /.menu-navigations -->
+        <div class="menu-apps">
+            <h2>Apps</h2>
+            <div class="menu-apps__icons">
+                <div class="row align-items-center">
+                    <div class="col-6 icon">
+                        <a href="#">
+                            <img src="img/documents/icons/microsoft-word.png" alt="word icon">
+                            Word
+                        </a>
+                    </div>
+                    <!-- /.icon -->
+                    <div class="col-6 icon">
+                        <a href="#">
+                            <img src="img/documents/icons/microsoft-excel.png" alt="excel icon">
+                            Excel
+                        </a>
+                    </div>
+                    <!-- /.icon -->
+                </div>
+                <!-- /.row-->
+                <div class="row align-items-center">
+                    <div class="col-6 icon">
+                        <a href="#">
+                            <img src="img/documents/icons/microsoft-powerpoint.png" alt="powerpoint icon">
+                            Powerpoint
+                        </a>
+                    </div>
+                    <!-- /.icon -->
+                    <div class="col-6 icon">
+                        <a href="#">
+                            <img src="img/documents/icons/microsoft-one_note.png" alt="One Note icon">
+                            OneNote
+                        </a>
+                    </div>
+                    <!-- /.icon -->
+                </div>
+                <!-- /.row-->
+                <div class="row align-items-center">
+                    <div class="col-6 icon">
+                        <a href="#">
+                            <img src="img/documents/icons/microsoft-one_drive.png" alt="one drive icon">
+                            OneDrive
+                        </a>
+                    </div>
+                    <!-- /.icon -->
+                    <div class="col-6 icon">
+                        <a href="#">
+                            <img src="img/documents/icons/microsoft-out-look.png" alt="Out look icon">
+                            OutLook
+                        </a>
+                    </div>
+                    <!-- /.icon -->
+                </div>
+                <!-- /.row-->
+                <div class="row align-items-center">
+                    <div class="col-6 icon">
+                        <a href="#">
+                            <img src="img/documents/icons/skype.png" alt="Skype icon">
+                            Skype
+                        </a>
+                    </div>
+                    <!-- /.icon -->
+                </div>
+                <!-- /.row-->
+            </div>
+            <!-- /.menu-apps__icons -->
+        </div>
+        <!-- /.menu-apps -->
+        <a href="#" class="menu-apps__all-link">
+            All apps
+            <span class="fas fa-arrow-right"></span>
+        </a>
+    </div>
+    <!-- /.menu -->
+</div>
+<!-- /.overlay -->
+
 <section class="navigation">
     <div class="navigation-container">
         <div class="row align-items-center">
-            <div class="ts-logo">
-                <span class="ts-logo__txt">
-                    TS
-                </span>
-            </div>
+            <a href="#">
+                <div class="ts-logo">
+                    <span class="ts-logo__txt">
+                        TS
+                    </span>
+                </div>
+            </a>
             <!-- /.col ts-logo -->
             <div class="col-8 ts-navigation">
                     <div class="ts-navigation__title">
@@ -490,16 +582,11 @@
     </div>
 </section>
 
-
-
-<script src="js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

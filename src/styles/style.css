@@ -9,6 +9,9 @@
     border: 1px solid #0072c5;
     background-color: #0072c5;
     color: #cfcfd0; }
+    .header-left__button:hover {
+      background-color: #0063ac;
+      border-color: #0063ac; }
   .header-left__links {
     display: inline-block; }
     .header-left__links a {
@@ -295,6 +298,65 @@
           .documents-blocks .block-description__user .user_description {
             display: inline-block;
             line-height: 1.5; }
+
+.overlay {
+  padding: 1px 20px 1px 1px;
+  box-shadow: 9px 0 7px -4px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: #ffffff;
+  width: 320px;
+  height: 100%;
+  z-index: 2; }
+  .overlay .menu-navigations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .overlay .menu-navigations__button {
+      padding: 10px;
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
+      color: #373737; }
+      .overlay .menu-navigations__button:hover {
+        background-color: #f2f2f2;
+        border-color: #f2f2f2; }
+    .overlay .menu-navigations__link {
+      font-weight: bold;
+      color: #373737; }
+      .overlay .menu-navigations__link .fas {
+        margin-left: 10px; }
+  .overlay .menu-apps {
+    margin-top: 40px;
+    margin-left: 10px; }
+    .overlay .menu-apps h2 {
+      font-size: 18pt;
+      font-weight: bold; }
+    .overlay .menu-apps__icons {
+      margin-top: 25px;
+      margin-left: 2px; }
+      .overlay .menu-apps__icons .row {
+        padding-bottom: 20px; }
+      .overlay .menu-apps__icons .icon {
+        padding: 10px; }
+        .overlay .menu-apps__icons .icon a {
+          color: #373737;
+          font-size: 11pt;
+          text-decoration: none; }
+          .overlay .menu-apps__icons .icon a img {
+            margin-right: 5px;
+            width: 32px;
+            height: 28px;
+            float: left; }
+        .overlay .menu-apps__icons .icon:hover {
+          border: 1px solid #c0c0c0;
+          box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5); }
+    .overlay .menu-apps__all-link {
+      margin-left: 10px;
+      font-size: 11pt;
+      font-weight: bold;
+      color: #373737; }
 
 @media (max-width: 576px) {
   .header {
